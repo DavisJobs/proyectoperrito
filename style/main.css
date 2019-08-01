@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Helvetica;
+  }
+  
+  h1{
+    font-size: 24px
+  }
+  h2{
+    font-size: 20px
+  }
+  h3 {
+    font-size: 16px
+  }
+  p{
+    size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  /*TODO:Header*/
+  header{
+    width: 100%;
+    background: brown;
+    display: flex;
+    padding: 20px;
+    top: 0%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  header a{
+    color: #ccc;
+    font-size: 16px;
+  }
+  header .logo{
+    font-size: 25px;
+  }
+  
+  header ul{
+    display: flex;
+    align-content: center;
+  }
+  
+  header ul li{
+    margin-left: 20px
+  }
+  
+  header ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  header .fa-dog {
+    font-size: 32px;
+  }
+  
+  header .menu {
+    position: absolute;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /*TODO:Main*/
+  
+  main {
+    margin-top: 64px;
+  }
+  
+  /*TODO:banner*/
+  
+  .banner {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner img {
+    margin-top: -25%;
+    width: 100%;
+  }
+  
+  /*TODO:Text*/
+  .banner .text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .banner .text h1,p {
+    margin-bottom: 10px;
+  }
+  
+  .banner .text a{
+    margin-top: 10px;
+    display: inline-block;
+    color: red;
+  }
+  
+  /*TODO:CLUB*/
+  
+  .club{
+    background: lightblue;
+    padding: 20px 0;
+  }
+  .club .text{
+    text-align: center;
+  }
+  
+  .club .text h2 {
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .club .blog h3 {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .club .blog article {
+    text-align: center;
+  }
+  
+  .club .blog div {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .club img{
+    margin-bottom: 20px;
+  }
+  
+  /*TODO:Pets*/
+  
+  .pets{
+    background: lightpink;
+  }
+  
+  .pets h2{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pets div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pets img{
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: 5px solid white;
+  
+  }
+  /*TODO:Footer*/
+  
+  footer{
+    background: brown;
+    display: flex;
+    padding: 20px;
+  
+    justify-content: space-between;
+  }
+  
+  footer a{
+    color: white;
+  }
+  
+  footer ul{
+    display: flex;
+  }
+  
+  footer li{
+    margin-left: 20px;
+  }
+  
+  .fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 16px;
+  }
+  
+  @media (max-width:960px) {
+    .club .blog div {
+      flex-wrap: wrap;
+    }
+    .club .blog article {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #d2cece;
+      padding-bottom: 15px;
+  }
+  .banner {
+    width: 100%;
+    height: 50%;
+  }
+    
+  }
+  
+  @media (max-width:780px) {
+    header nav {
+      display: none;
+    }
+    .pets div {
+      flex-wrap: wrap;
+    }
+    .pets div article {
+      margin: 15px 0;
+    }
+  }
+  
+  @media (max-width:580px) {
+   
+    body {
+      font-size: 13px;
+    }
+   
+    .banner .text {
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,.5);
+    }
+  }
+  
+  @media (max-width:360px) {
+    /*footer*/
+    footer {
+        flex-direction: column;
+    }
+    footer ul {
+        margin-top: 20px;
+    }
+    footer ul li:first-child {
+        margin-left: 0;
+    }
+  }
